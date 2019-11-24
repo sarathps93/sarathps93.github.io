@@ -5,7 +5,10 @@ const env = require('./env');
 module.exports = {
   mode: env,
   target: 'node',
-  entry: './src/client/index.js',
+  entry: [
+    './src/client/index.js',
+    './src/styles/root-sass.scss',
+  ],
   output: {
     filename: 'client.js',
     path: path.resolve(__dirname, 'build'),
@@ -32,7 +35,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: env === 'production' ? 'style.[contenthash].[name].css' : '[name].css',
+      filename: 'styles.css',
     }),
   ],
 };
