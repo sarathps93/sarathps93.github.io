@@ -1,9 +1,11 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const isProd = require('./isProd');
+const env = require('./env');
 
-module.export = {
-  entry: './src/client/App.js',
+module.exports = {
+  mode: env,
+  target: 'node',
+  entry: './src/client/index.js',
   output: {
     filename: 'client.js',
     path: path.resolve(__dirname, 'build'),
@@ -30,7 +32,7 @@ module.export = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: isProd ? 'style.[contenthash].[name].css' : '[name].css',
+      filename: env === 'production' ? 'style.[contenthash].[name].css' : '[name].css',
     }),
   ],
 };
