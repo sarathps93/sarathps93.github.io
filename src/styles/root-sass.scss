@@ -1,6 +1,56 @@
+@import './animations.scss';
+@import '../client/components/footer/Footer.scss';
+@import '../client/components/header/Header.scss';
+@import '../client/components/myDetails/MyDetails.scss';
+
 body {
   background-color: #efedeb;
   font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
   box-sizing: border-box;
   margin: 0;
+}
+
+.app--dp {
+  border-radius: 50%;
+  width: 25%;
+  height: 25%;
+  margin: 2rem 0;
+}
+
+.app--container {
+  display: flex;
+  justify-content: center;
+}
+
+.app--name {
+  font-size: 50px;
+  margin: 4rem 2rem;
+  margin-left: 2rem;
+  opacity: 0;
+  animation-name: textdisplay;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.app--designation {
+  font-size: 35px;
+  margin-top: 1rem;
+  color: #06c;
+  animation-name: textdisplay;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.app-mydetails--container {
+ & .app--mydetails {
+   &:nth-of-type(1) {
+     background-color: #bb0000
+   }
+   &:nth-of-type(2) {
+     background-color: #589e58
+   }
+   &:nth-of-type(3) {
+     background-color: #a92fa9;
+   }
+ }
 }

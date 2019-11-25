@@ -1,9 +1,17 @@
 import React from 'react';
+import MyDetails from './myDetails/MyDetails';
 
-const App = (props) => {
+import '../../assets/images/dp.jpg';
+
+const App = () => {
   return (
-    <div>
-      <p>This is the home page of my app*hello</p>
+    <div className="app--container">
+      <img className="app--dp" src="/dp.jpg" alt="logo" />
+      <div className="app--name">
+        Sarath Pottayil Sasidharan
+        <div className="app--designation">Full stack developer</div>
+        <MyDetails />
+      </div>
     </div>
   );
 };

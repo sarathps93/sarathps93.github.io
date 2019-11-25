@@ -31,6 +31,13 @@ module.exports = {
           'postcss-loader',
         ],
       },
+      {
+        test: /\.jpg$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].jpg',
+        },
+      },
     ],
   },
   plugins: [
