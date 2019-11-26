@@ -32,10 +32,10 @@ module.exports = {
         ],
       },
       {
-        test: /\.jpg$/,
+        test: /\.(jpg|pdf)$/,
         loader: 'file-loader',
         options: {
-          name: '[name].jpg',
+          name: '[name].[ext]',
         },
       },
     ],
