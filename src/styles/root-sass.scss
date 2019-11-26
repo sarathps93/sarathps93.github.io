@@ -15,42 +15,64 @@ body {
   width: 25%;
   height: 25%;
   margin: 2rem 0;
+  animation-name: textdisplay;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  @media(max-width: 768px) {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 0;
+    margin: auto;
+    display: block;
+    margin-top: 2rem;
+  }
 }
 
 .app--container {
   display: flex;
   justify-content: center;
+  @media(max-width: 768px) {
+    display: block;
+  }
 }
 
 .app--name {
   font-size: 50px;
+  width: 40%;
   margin: 4rem 2rem;
   margin-left: 2rem;
   opacity: 0;
   animation-name: textdisplay;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+  @media(max-width: 768px) {
+    font-size: 35px;
+    width: auto;
+    margin-top: 2rem;
+  }
 }
 
 .app--designation {
   font-size: 35px;
   margin-top: 1rem;
   color: #06c;
-  animation-name: textdisplay;
-  animation-duration: 4s;
+  animation-name: textdisplay 4s;
   animation-fill-mode: forwards;
+  @media(max-width: 768px) {
+    font-size: 25px;
+  }
 }
 
-.app-mydetails--container {
- & .app--mydetails {
-   &:nth-of-type(1) {
-     background-color: #bb0000
-   }
-   &:nth-of-type(2) {
-     background-color: #589e58
-   }
-   &:nth-of-type(3) {
-     background-color: #a92fa9;
-   }
- }
+.app-intro--text {
+  margin-top: 2rem;
+  opacity: 0.6;
+  & span {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  & a {
+    font-size: 23px;
+    text-decoration: none;
+  }
 }

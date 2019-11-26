@@ -22,11 +22,11 @@ module.exports = {
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
-          'sass-loader',
           MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
           },
+          'sass-loader',
           'postcss-loader',
         ],
       },
