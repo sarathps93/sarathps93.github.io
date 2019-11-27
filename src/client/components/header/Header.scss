@@ -4,4 +4,29 @@
   background-color: #283e4a;
   padding: 1rem;
   box-sizing: border-box;
+
+  & .app-header--list {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    max-height: 2rem;
+    @media(max-width: 768px) {
+      display: block;
+    }
+    & li {
+      margin-left: 5%;
+      &:last-of-type {
+        margin-right: 20%;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.app-nav--links {
+  color: inherit;
+  text-decoration: none;
 }
