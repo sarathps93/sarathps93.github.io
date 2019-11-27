@@ -8,6 +8,9 @@
     height: 80px;
     width: 80px;
   }
+  & :hover {
+    cursor: pointer;
+  }
 }
 
 .app-mydetails--text {
@@ -28,19 +31,14 @@
   animation-name: textdisplay;
   animation-duration: 4s;
   animation-fill-mode: forwards;
-  & .app--mydetails {
-    &:hover {
-      cursor: pointer;
-    }
-    &:nth-of-type(1) {
-      background-color: #bb0000
-    }
-    &:nth-of-type(2) {
-      background-color: #589e58
-    }
-    &:nth-of-type(3) {
-      background-color: #a92fa9;
-    }
+  & .app-mydetails--resume {
+    background-color: rgb(21, 126, 179);
+  }
+  & .app-mydetails--work {
+    background-color: #55A51C;
+  }
+  & .app-mydetails--skills {
+    background-color: #365C7D;
   }
 }
 

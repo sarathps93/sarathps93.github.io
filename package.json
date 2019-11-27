@@ -10,7 +10,7 @@
     "build:dev": "NODE_ENV=development npm run build:client && npm run build:server",
     "build:prod": "NODE_ENV=production npm run build:client && npm run build:server",
     "start:dev": "nodemon ./build/server.js",
-    "start:prod": "node ./build/server.js"
+    "start": "node ./build/server.js"
   },
   "repository": {
     "type": "git",

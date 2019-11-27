@@ -55,7 +55,7 @@ body {
 .app--designation {
   font-size: 35px;
   margin-top: 1rem;
-  color: #06c;
+  opacity: 0.6;
   animation-name: textdisplay 4s;
   animation-fill-mode: forwards;
   @media(max-width: 768px) {
@@ -74,9 +74,6 @@ body {
   & a {
     font-size: 23px;
     text-decoration: none;
+    color: #00284C;
   }
-}
-
-.app--myname {
-  color: rebeccapurple;
 }
