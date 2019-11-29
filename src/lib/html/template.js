@@ -4,6 +4,7 @@ export default (content) => `<!DOCTYPE html>
   <meta charset="UTF-8" content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
   <title>Sarath</title>
   <link rel="stylesheet" type="text/css" href="./styles.css" />
+  <link rel="icon" type="image/gif" href="code.png" />
 </head>
 <body>
   <div id="root">${content}</div>

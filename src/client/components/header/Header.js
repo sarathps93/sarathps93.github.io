@@ -7,17 +7,15 @@ const Header = () => {
     <div className="app--header">
       <ul className="app-header--list">
         {contents.headerItems.map((item) => (
-          <li key={item.labe}>
-            <NavLink
-              exact
-              to={item.link}
-              className="app-nav--links"
-            >
+          <li key={item.label}>
+            <NavLink exact to={item.link} className="app-nav--links">
               {item.label}
             </NavLink>
           </li>
-
         ))}
+        <li>
+          <a href={contents.blogs.link}>{contents.blogs.label}</a>
+        </li>
       </ul>
     </div>
   );

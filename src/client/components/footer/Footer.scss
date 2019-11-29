@@ -4,4 +4,17 @@
   background-color: #283e4a;
   padding: 1rem;
   box-sizing: border-box;
+  & .app-footer--copyright {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    & .app-footer--builtinfo {
+      font-size: 12px;
+    }
+  }
+  & svg {
+    fill: white;
+    margin-right: 1rem;
+    overflow: visible;
+  }
 }
