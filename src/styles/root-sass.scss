@@ -122,6 +122,9 @@ body {
     animation-name: textdisplay;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+    @media(max-width: 768px) {
+      display: none;
+    }
     & a {
       text-decoration: none;
       color: black;
@@ -129,5 +132,29 @@ body {
   }
   & span {
     margin-left: 1rem;
+  }
+  & label {
+    text-decoration: underline;
+    animation-name: textdisplay;
+    animation-duration: 2s;
+    cursor: pointer;
+    margin: inherit;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: #2c2cda;
+    @media(min-width: 768px) {
+      display: none;
+    }
+  }
+  & input {
+    display: none;
+    @media(max-width: 768px) {
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+    }
+    &:checked~.app-sidepane--items {
+      display: block;
+    }
   }
 }

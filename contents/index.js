@@ -2,10 +2,12 @@ import LocationSvg from '../src/assets/svg/Location';
 import PhoneSvg from '../src/assets/svg/Phone';
 import MailSvg from '../src/assets/svg/Mail';
 import LinkedInSvg from '../src/assets/svg/LinkedIn';
+import StackOverflowSvg from '../src/assets/svg/StackOverflow';
 
 export default {
   name: 'Sarath Pottayil Sasidharan',
   designation: 'Full stack developer',
+  accordionLabel: 'View contact details',
   intro: `I am a full stack developer having more than 5 years of experience and currently working for a major Banking firm in London, United Kingdom.
           I am really passionate about software develoment and the latest trends around it. My primary area of expertise is 
           front end development using React & Redux. I believe in developing high performing, accessible and compatible websites which are for everyone.`,
@@ -64,8 +66,13 @@ export default {
     },
     {
       label: 'linkedin',
-      content: '<a href="https://www.linkedin.com/in/sarath-pottayil-sasidharan-bb128881">Profile</a>',
+      content: '<a href="https://www.linkedin.com/in/sarath-pottayil-sasidharan-bb128881">LinkedIn Profile</a>',
       component: LinkedInSvg,
+    },
+    {
+      label: 'StackOverflow',
+      content: '<a href="https://stackoverflow.com/users/10354381/sarath-p-s">Stackoverflow Profile</a>',
+      component: StackOverflowSvg,
     },
   ],
   copyRight: 'Built from scratch using React server side rendering',
