@@ -113,12 +113,14 @@ body {
   flex-direction: column;
   align-items: flex-start;
   margin-top: 1rem;
-  margin-left: 15%;
+  width: 100%;
+  margin: auto;
   & .app-sidepane--items {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
+    margin-left: 17%;
     animation-name: textdisplay;
     animation-duration: 2s;
     animation-fill-mode: forwards;
