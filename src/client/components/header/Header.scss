@@ -6,23 +6,39 @@
   box-sizing: border-box;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 3;
+  max-height: none;
   & .app-header--list {
     list-style-type: none;
     margin: 0;
     display: flex;
     justify-content: flex-end;
     max-height: 2rem;
-    @media(max-width: 768px) {
-      display: none;
+    overflow: hidden;
+    @media(max-width: 770px) {
+      clear: both;
+      max-height: 0;
+      transition: max-height .2s ease-out;
+      padding-left: 0;
+      text-align: center;
     }
     & li {
       margin-left: 5%;
       &:last-of-type {
-        margin-right: 20%;
+        @media(min-width: 770px) {
+          margin-right: 20%;
+        }    
       }
       &:hover {
         cursor: pointer;
+      }
+      & a {
+        @media(max-width: 770px) {
+          display: block;
+          padding: 20px 20px;
+          text-decoration: none;
+          padding-left: 0;
+        }
       }
     }
   }
@@ -31,4 +47,51 @@
 .app-nav--links, .app--header a {
   color: inherit;
   text-decoration: none;
+}
+
+#app-header--toggle {
+  display: none;
+  &:checked~ .app-header--list {
+    display: block;
+    max-height: fit-content;
+  }
+  
+}
+.app--navicon {
+  background: white;
+  display: block;
+  height: 2px;
+  position: relative;
+  cursor: pointer;
+  transition: background .2s ease-out;
+  width: 18px;
+  &::before, &::after {
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+}
+
+.app--header label {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+  padding: 0;
+  @media(min-width: 770px) {
+    display: none;
+  }
+}
+
+.app--navicon::before {
+  top: 5px;
+}
+
+.app--navicon::after {
+  top: -5px;
 }

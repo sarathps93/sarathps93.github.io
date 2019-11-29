@@ -17,7 +17,7 @@ const App = () => {
         <img className="app--dp" src="/dp.jpg" alt="logo" />
         <div className="app-sidepane--container">
           <input type="checkbox" id="app--accordion" />
-          <label className="tab-label" htmlFor="app--accordion">{contents.accordionLabel}</label>
+          <label htmlFor="app--accordion">{contents.accordionLabel}</label>
           {contents.contact.map((item) => (
             <div key={item.label} className="app-sidepane--items">
               <item.component />

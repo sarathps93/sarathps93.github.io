@@ -11,7 +11,7 @@ body {
 }
 
 .app-dp--container {
-  @media(min-width: 768px) {
+  @media(min-width: 770px) {
     margin-right: 2rem;
   }
 }
@@ -23,7 +23,7 @@ body {
   animation-name: textdisplay;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  @media(max-width: 768px) {
+  @media(max-width: 770px) {
     width: 50%;
     height: 50%;
     margin-bottom: 0;
@@ -37,7 +37,7 @@ body {
   display: flex;
   margin-top: 4rem;
   justify-content: center;
-  @media(max-width: 768px) {
+  @media(max-width: 770px) {
     display: block;
   }
 }
@@ -51,7 +51,7 @@ body {
   animation-name: textdisplay;
   animation-duration: 2s;
   animation-fill-mode: forwards;
-  @media(max-width: 768px) {
+  @media(max-width: 770px) {
     font-size: 35px;
     width: auto;
     margin-top: 2rem;
@@ -64,7 +64,7 @@ body {
   opacity: 0.6;
   animation-name: textdisplay 4s;
   animation-fill-mode: forwards;
-  @media(max-width: 768px) {
+  @media(max-width: 770px) {
     font-size: 25px;
   }
 }
@@ -87,8 +87,8 @@ body {
 .app-profile-image--links {
   display: inline-flex;
   &:not(:last-of-type) {
-    margin-right: 4rem;
-    @media(max-width: 768px) {
+    margin-right: 3rem;
+    @media(max-width: 770px) {
       margin-right: 1.5rem;
     }
   }
@@ -103,7 +103,7 @@ body {
 .app-image--icons {
   height: 80px;
   width: 100px;
-  @media(max-width: 768px) {
+  @media(max-width: 770px) {
     width: 60px;
   }
 }
@@ -122,7 +122,7 @@ body {
     animation-name: textdisplay;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    @media(max-width: 768px) {
+    @media(max-width: 770px) {
       display: none;
     }
     & a {
@@ -142,13 +142,13 @@ body {
     margin-bottom: 1rem;
     margin-top: 1rem;
     color: #2c2cda;
-    @media(min-width: 768px) {
+    @media(min-width: 770px) {
       display: none;
     }
   }
   & input {
     display: none;
-    @media(max-width: 768px) {
+    @media(max-width: 770px) {
       position: absolute;
       opacity: 0;
       z-index: -1;
