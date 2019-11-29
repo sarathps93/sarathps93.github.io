@@ -32,7 +32,6 @@ const App = () => {
         <MyDetails />
         <div className="app-intro--text">
           <span>{contents.intro}</span>
-          <a href="http://google.com">{contents.workTogether}</a>
         </div>
         <div className="app-profile--flextext">{contents.follow}</div>
         {contents.profiles.map((profile) => (
