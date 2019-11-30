@@ -18,11 +18,11 @@ export default {
     },
     {
       label: 'Work',
-      link: '/',
+      link: '/my-works',
     },
     {
       label: 'Skills',
-      link: '/',
+      link: '/my-skills',
     },
   ],
   blogs: {
