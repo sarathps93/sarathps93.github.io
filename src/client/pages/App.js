@@ -1,5 +1,5 @@
 import React from 'react';
-import MyDetails from '../components/myDetails/MyDetails';
+
 import contents from '../../../contents';
 
 import '../../assets/images/dp.jpg';
@@ -10,7 +10,7 @@ import '../../assets/images/linkedIn.png';
 import '../../assets/images/code.png';
 
 const createMarkup = (content) => ({ __html: content });
-const App = () => {
+const App = (props) => {
   return (
     <div className="app--container">
       <div className="app-dp--container">
@@ -26,28 +26,8 @@ const App = () => {
           ))}
         </div>
       </div>
-      <div className="app--name">
-        <span className="app--myname">{contents.name}</span>
-        <div className="app--designation">{contents.designation}</div>
-        <MyDetails />
-        <div className="app-intro--text">
-          <span>{contents.intro}</span>
-        </div>
-        <div className="app-profile--flextext">{contents.follow}</div>
-        {contents.profiles.map((profile) => (
-          <a
-            href={profile.link}
-            key={profile.alt}
-            className="app-profile-image--links"
-            style={{ backgroundColor: profile.bgColor }}
-          >
-            <img
-              src={profile.path}
-              className="app-image--icons"
-              alt={profile.alt}
-            />
-          </a>
-        ))}
+      <div className="app-right--container">
+        {props.children}
       </div>
     </div>
   );
