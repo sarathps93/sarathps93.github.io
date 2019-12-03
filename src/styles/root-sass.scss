@@ -3,6 +3,7 @@
 @import '../client/components/header/Header.scss';
 @import '../client/components/myDetails/MyDetails.scss';
 @import '../client/pages/Profile/Profile.scss';
+@import '../client/components/tabs/Tabs.scss';
 
 body {
   background-color: #efedeb;
@@ -45,10 +46,9 @@ body {
 
 .app-right--container {
   font-size: 50px;
-  width: 40%;
+  width: 50%;
   margin: 4rem 2rem;
   margin-left: 2rem;
-  padding-bottom: 2rem;
   opacity: 0;
   animation-name: textdisplay;
   animation-duration: 2s;

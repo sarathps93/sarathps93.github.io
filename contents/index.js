@@ -76,4 +76,22 @@ export default {
     },
   ],
   copyRight: 'Built from scratch using React server side rendering',
+  skills: [
+    {
+      label: 'Development',
+      contents: [
+        {
+          label: 'Front End Development',
+        },
+      ],
+    },
+    {
+      label: 'Automation',
+      contents: [
+        {
+          label: 'UI Automatiomn',
+        },
+      ],
+    },
+  ],
 };

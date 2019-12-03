@@ -1,0 +1,38 @@
+.app-skills--tabs {
+  margin-top: 0;
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-size: 20px;
+  .app-tabItem {
+    color: #fff;
+    background-color: #5E93DB;
+    padding: 6px 18px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  .app-tabItem--active {
+    color: #fff;
+    background-color: #00284c;
+    position: relative;
+    .app-tab-active--icon {
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-top: 25px solid #00284c;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+    }
+  }
+}
+
+.app-tab--description {
+  word-break: break-all;
+  margin-top: 1rem;
+  border: 1px solid #00284c;
+  background-clip: padding-box;
+  padding: 18px;
+  font-size: 18px;
+}
