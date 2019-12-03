@@ -7,11 +7,6 @@ const Skills = () => {
   return (
     <>
       <div className="app-skills-image--container">
-        {
-          contents.skillsImages.map((path) => (
-            <img key={path} width="30px" height="30px" src={path} alt="skills" />
-          ))
-        }
       </div>
       <Tabs>
         {contents.skills.map((skill) => {
