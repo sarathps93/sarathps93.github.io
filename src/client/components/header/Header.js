@@ -7,11 +7,13 @@ import contents from '../../../../contents';
 const Header = () => {
   useEffect(() => {
     const hamburgerMenu = document.getElementById('app-header--toggle');
-    document.querySelector('.app-header--list').addEventListener('click', () => {
-      if (hamburgerMenu.checked) {
-        hamburgerMenu.checked = false;
-      }
-    });
+    document
+      .querySelector('.app-header--list')
+      .addEventListener('click', () => {
+        if (hamburgerMenu.checked) {
+          hamburgerMenu.checked = false;
+        }
+      });
   }, []);
 
   return (
@@ -28,9 +30,11 @@ const Header = () => {
             </NavLink>
           </li>
         ))}
-        <li>
-          <a href={contents.blogs.link}>{contents.blogs.label}</a>
-        </li>
+        {contents.headerLinks.map((link) => (
+          <li key={link.label}>
+            <a href={link.link}>{link.label}</a>
+          </li>
+        ))}
       </ul>
     </div>
   );

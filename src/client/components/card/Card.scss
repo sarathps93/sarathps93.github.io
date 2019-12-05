@@ -1,13 +1,17 @@
 .app--card {
-  width: 90%;
-  margin: 0 auto;
   border: 1px solid transparent;
   box-sizing: border-box;
   background-color: #fff;
   position: relative;
   .app-card--contents {
-    font-size: 20px;
+    font-size: 18px;
     padding: 18px;
+    height: 70%;
+    overflow: scroll;
+    & ul {
+      padding-left: 1rem;
+      margin-top: 0;
+    }
   }
   & a {
     position: absolute;
@@ -26,7 +30,7 @@
 .app-card--label {
   height: 50px;
   border-bottom: 1px solid transparent;
-  font-size: 23px;
+  font-size: 18px;
   box-sizing: border-box;
   width: 100%;
   text-align: center;

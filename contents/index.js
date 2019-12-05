@@ -14,26 +14,46 @@ export default {
           I am really passionate about software develoment and the latest trends around it. My primary area of expertise is 
           front end development using React & Redux. I believe in developing high performing, accessible and compatible websites which are for everyone.`,
   para: 'Are you looking for someone with the below skills to help you out?',
-  skillsList: ['Front end development with React and Redux', 'Strong understanding about JavaScript', 'NodeJs development', 'Docker containers with Kubernetes', 'UI & API Automation', 'Contract Testing', 'A quick learner with leadership qualities', 'Agile exposure', 'Continous Integration & Continuous Delivery'],
+  skillsList: ['Front end development with React and Redux', 'Strong understanding about JavaScript', 'Data Structure and Algorithms', 'NodeJs development', 'Docker containers with Kubernetes', 'UI & API Automation', 'Contract Testing', 'A quick learner with leadership qualities', 'Agile exposure', 'Continous Integration & Continuous Delivery'],
   quote: 'A good developer writes code that works. But, a great developer writes code which is understandable by everyone.',
+  myDetails: [
+    {
+      label: 'MY RESUME',
+      link: '/my_resume.pdf',
+      class: 'app-mydetails--resume',
+    },
+    {
+      label: 'MY SKILLS',
+      link: '/my-skills',
+      class: 'app-mydetails--skills',
+      navLink: true,
+    },
+    {
+      label: 'MY BLOGS',
+      link: 'https://medium.com/@sarathps93',
+      class: 'app-mydetails--work',
+    },
+  ],
   headerItems: [
     {
       label: 'Home',
       link: '/',
     },
     {
-      label: 'Work',
-      link: '/my-works',
-    },
-    {
       label: 'Skills',
       link: '/my-skills',
     },
   ],
-  blogs: {
-    label: 'Blogs',
-    link: 'https://medium.com/@sarathps93',
-  },
+  headerLinks: [
+    {
+      label: 'Resume',
+      link: '/my_resume.pdf',
+    },
+    {
+      label: 'Blogs',
+      link: 'https://medium.com/@sarathps93',
+    },
+  ],
   contact: [
     {
       label: 'location',
@@ -75,26 +95,48 @@ export default {
   skills: [
     {
       label: 'UI / Backend development',
-      content: `Front end development primarily using <strong>React</strong> and <strong>Redux</strong>. 
-                Experienced in developing Single Page and Server side rendering  applications. 
-                <p>Also experienced in developing <strong>NodeJs</strong> applications and scaling up to improve performance.</p>`,
+      content: [
+        'Experienced in creating single page and server side rendering applications using React and Redux from scratch',
+        'Experienced in creating React component libraries and style guides',
+        'Understanding about Data Structures and Algorithms',
+        'Experience and Knowledge in latest JavaScript',
+        'Deep understanding about Redux Middlewares, Webpack, Babel, SCSS and other development technologies',
+        'Creation of NodeJs backend applications, clustering and forking',
+        'REST API development',
+        'Worked in test driven development TDD methodology using Jest, Enzyme and React test library',
+        'Learning Socket.Io, OAuth & JWT',
+      ],
     },
     {
       label: 'Automation',
-      content: `Strong experience in automating UI and API applications, 
-                Contract Testing of microservices, Non-functional testing etc., using NodeJs tools & other technologies.
-                <p>Pioneer in providing end to end automation solutions.</p>`,
+      content: [
+        'Proficient in automating UI applications through Selenium Webdriver & WebdriverIo along with Cucumber and Mocha frameworks',
+        'Automation of APIs through NodeJs',
+        'Integration of microservices successfully by implementing Consumer Driven Contract Testing using PACT',
+        'Experienced in developing various automation frameworks from scratch',
+        'Experience in Automated Visual testing using Applitools, compatibility testing using SauceLabs, Accessibility using Axe etc.',
+        'Development of in-house reporting dashboards by using React / pure HTML and integration with Jenkins and MySQL database for job scheduling',
+      ],
     },
     {
-      label: 'DevOps',
-      content: `I am always passionate towards implementing continuous integration and continuous delivery model.
-                <p>Knowledge and experience in Jenkins, Docker, Kubernetes and other DevOps technologies.`,
+      label: 'DevOps & other skills',
+      content: [
+        'Knowledge and experience in setting up Jenkins builds to run automation',
+        'Knowlege about Docker containerisation and Kubernetes',
+        'Proficient about Git wokflows and source code management',
+        'Experience in working with GitHub and GitLab',
+        'Knowledge about Creation of CI/CD pipelines',
+        'Learning AWS',
+      ],
     },
     {
       label: 'Other Skills',
-      content: `During my free time I make sure to learn something new or to code something new. 
-              <p><strong>Machine Learning</strong> & <strong>Cloud</strong> are few of the areas which fascinates me. 
-              Please click on the below link to find out more</p>`,
+      content: [
+        'Learning Python',
+        'Agile Scrum and Kanban experience',
+        'Experience in leading a mid sized team',
+        'Different domain experience. I have worked in Retail, Financial Services, Insurance, Securities & Capital Markets domains',
+      ],
     },
   ],
 };

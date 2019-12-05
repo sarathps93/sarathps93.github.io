@@ -5,7 +5,6 @@ import Header from './components/header/Header';
 import App from './pages/App';
 import Profile from './pages/Profile/Profile';
 import Skills from './pages/Skills/Skills';
-import Work from './pages/Work/Work';
 
 const Routes = () => {
   return (
@@ -15,7 +14,6 @@ const Routes = () => {
         <Switch>
           <Route exact path="/" component={Profile} />
           <Route exact path="/my-skills" component={Skills} />
-          <Route exact path="/my-works" component={Work} />
         </Switch>
       </App>
     </>
