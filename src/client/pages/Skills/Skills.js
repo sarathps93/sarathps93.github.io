@@ -6,11 +6,9 @@ const Skills = () => {
   return (
     <>
       <div className="app-skills-grid--container">
-        {
-            contents.skills.map((skill) => (
-              <Card key={skill.label} label={skill.label} content={skill.content}/>
-            ))
-          }
+        {contents.skills.map((skill) => (
+          <Card key={skill.label} label={skill.label} content={skill.content} />
+        ))}
       </div>
     </>
   );
