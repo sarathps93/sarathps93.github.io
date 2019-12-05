@@ -1,0 +1,39 @@
+.app--card {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  background-color: #fff;
+  position: relative;
+  .app-card--contents {
+    font-size: 20px;
+    padding: 18px;
+  }
+  & a {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 18px;
+    color: #0932a7;
+    text-decoration: none;
+    padding: 10px;
+    &::after {
+      content: " >"
+    }
+  }
+}
+
+.app-card--label {
+  height: 50px;
+  border-bottom: 1px solid transparent;
+  font-size: 23px;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  display: table;
+  & span {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}

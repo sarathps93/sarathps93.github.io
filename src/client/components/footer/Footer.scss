@@ -4,6 +4,11 @@
   background-color: #283e4a;
   padding: 1rem;
   box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  @media(max-width: 700px) {
+    position: relative;
+  }
   & .app-footer--copyright {
     display: flex;
     align-items: center;
