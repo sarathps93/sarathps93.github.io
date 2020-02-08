@@ -7,6 +7,7 @@
     "lint": "eslint .",
     "build": "NODE_ENV=production webpack --config webpack.config.js",
     "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build:dev": "NODE_ENV=development npm run build",
     "start:dev": "nodemon ./build/server.js",
     "start:prod": "node ./build/server.js",
@@ -25,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/sarathps93/personal-website/issues"
   },
-  "homepage": "https://github.com/sarathps93/personal-website#readme",
+  "homepage": "https://sarathps93.github.io/",
   "dependencies": {
     "@babel/core": "^7.7.4",
     "@babel/node": "^7.7.4",
@@ -36,6 +37,7 @@
     "cssnano": "^4.1.10",
     "express": "^4.17.1",
     "file-loader": "^5.0.2",
+    "gh-pages": "^2.2.0",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.13.0",
     "postcss-loader": "^3.0.0",
