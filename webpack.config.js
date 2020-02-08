@@ -1,15 +1,16 @@
 const path = require('path');
-const nodeExternals = require('webpack-node-externals');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const env = require('./env');
 
 module.exports = {
   mode: env,
-  target: 'node',
-  entry: './src/server/index.js',
-  externals: [nodeExternals()],
+  target: 'web',
+  entry: [
+    './src/client/index.js',
+    './src/styles/root-sass.scss',
+  ],
   output: {
-    filename: 'server.js',
+    filename: 'client.js',
     path: path.resolve(__dirname, 'build'),
   },
   module: {
@@ -39,4 +40,9 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'styles.css',
+    }),
+  ],
 };
