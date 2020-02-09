@@ -19,7 +19,7 @@ export default {
   myDetails: [
     {
       label: 'MY RESUME',
-      link: '/my_resume.pdf',
+      link: './build/my_resume.pdf',
       class: 'app-mydetails--resume',
     },
     {
@@ -47,7 +47,7 @@ export default {
   headerLinks: [
     {
       label: 'Resume',
-      link: '/my_resume.pdf',
+      link: './build/my_resume.pdf',
     },
     {
       label: 'Blogs',

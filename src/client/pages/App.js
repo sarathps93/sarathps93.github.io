@@ -14,7 +14,7 @@ const App = (props) => {
   return (
     <div className="app--container">
       <div className="app-dp--container">
-        <img className="app--dp" src="/dp.jpg" alt="logo" />
+        <img className="app--dp" src="./build/dp.jpg" alt="logo" />
         <div className="app-sidepane--container">
           <input type="checkbox" id="app--accordion" />
           <label htmlFor="app--accordion">{contents.accordionLabel}</label>

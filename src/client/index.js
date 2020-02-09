@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Routes from './Routes';
 import '../styles/root-sass.scss';
 
-ReactDOM.hydrate(
+ReactDOM.render(
   <BrowserRouter>
     <Routes />
   </BrowserRouter>,
