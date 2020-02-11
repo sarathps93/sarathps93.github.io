@@ -6,7 +6,6 @@
   "scripts": {
     "lint": "eslint .",
     "build": "NODE_ENV=production webpack --config webpack.config.js",
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build:dev": "NODE_ENV=development npm run build",
     "start:dev": "nodemon ./build/server.js",
