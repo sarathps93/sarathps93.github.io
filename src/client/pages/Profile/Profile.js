@@ -12,13 +12,6 @@ const Profile = () => {
       <div className="app-intro--text">
         <span>{contents.intro}</span>
         <p>{contents.para}</p>
-        <ul>
-          {
-            contents.skillsList.map((skill) => (
-              <li key={skill}>{skill}</li>
-            ))
-          }
-        </ul>
       </div>
       <q className="app--quotes">{contents.quote}</q>
     </>

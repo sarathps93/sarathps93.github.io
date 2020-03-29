@@ -4,17 +4,13 @@ import LinkedInSvg from '../src/assets/svg/LinkedIn';
 import StackOverflowSvg from '../src/assets/svg/StackOverflow';
 import GitHubSvg from '../src/assets/svg/GitHub';
 import NpmSvg from '../src/assets/svg/Npm';
-import DockerSvg from '../src/assets/svg/DockerHub';
 
 export default {
   name: 'Sarath Pottayil Sasidharan',
-  designation: 'Full stack developer',
+  designation: 'Senior Software Engineer',
   accordionLabel: 'View contact details',
-  intro: `I am a full stack developer having more than 5 years of experience and currently working for a major Banking firm in London, United Kingdom.
-          I am really passionate about software develoment and the latest trends around it. My primary area of expertise is 
-          front end development using React & Redux. I believe in developing high performing, accessible and compatible websites which are for everyone.`,
-  para: 'Are you looking for someone with the below skills to help you out?',
-  skillsList: ['Front end development with React and Redux', 'Strong understanding about JavaScript', 'Data Structure and Algorithms', 'NodeJs development', 'Docker containers with Kubernetes', 'UI & API Automation', 'Contract Testing', 'A quick learner with leadership qualities', 'Agile exposure', 'Continous Integration & Continuous Delivery'],
+  intro: 'A self motivated, passionate Software Developer having 5+ years of industrial experience with primarily area of expertise in web development. Eager to learn and develop new tools and technologies to enhance the online experience of users worldwide. I believe in developing websites which are accessible for everyone.',
+  para: 'Reach out to me if you have got an interesting project and looking for a right candidate.',
   quote: 'A good developer writes code that works. But, a great developer writes code which is understandable by everyone.',
   myDetails: [
     {
@@ -57,7 +53,7 @@ export default {
   contact: [
     {
       label: 'location',
-      content: 'London, United Kingdom',
+      content: 'Bangalore, India',
       component: LocationSvg,
     },
     {
@@ -67,7 +63,7 @@ export default {
     },
     {
       label: 'linkedin',
-      content: '<a href="https://www.linkedin.com/in/sarath-pottayil-sasidharan-bb128881">LinkedIn Profile</a>',
+      content: '<a href="https://www.linkedin.com/in/sarathps93">LinkedIn Profile</a>',
       component: LinkedInSvg,
     },
     {
@@ -79,11 +75,6 @@ export default {
       label: 'GitHub',
       content: '<a href="https://github.com/sarathps93">GitHub Profile</a>',
       component: GitHubSvg,
-    },
-    {
-      label: 'DockerHub',
-      content: '<a href="https://hub.docker.com/u/sarathps93">DockerHub Profile</a>',
-      component: DockerSvg,
     },
     {
       label: 'Npm',

@@ -8,8 +8,7 @@
     "build": "NODE_ENV=production webpack --config webpack.config.js",
     "deploy": "gh-pages -d build",
     "build:dev": "NODE_ENV=development npm run build",
-    "start:dev": "nodemon ./build/server.js",
-    "start:prod": "node ./build/server.js",
+    "start:dev": "nodemon index.js",
     "start": "NODE_ENV=production npm run build:client && npm run build:server && npm run start:prod"
   },
   "repository": {
@@ -34,7 +33,6 @@
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
     "cssnano": "^4.1.10",
-    "express": "^4.17.1",
     "file-loader": "^5.0.2",
     "gh-pages": "^2.2.0",
     "mini-css-extract-plugin": "^0.8.0",
@@ -56,6 +54,7 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.16.0",
+    "express": "^4.17.1",
     "nodemon": "^2.0.1"
   }
 }
