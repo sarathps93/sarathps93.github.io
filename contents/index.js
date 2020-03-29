@@ -10,7 +10,7 @@ export default {
   designation: 'Senior Software Engineer',
   accordionLabel: 'View contact details',
   intro: 'A self motivated, passionate Software Developer having 5+ years of industrial experience with primarily area of expertise in web development. Eager to learn and develop new tools and technologies to enhance the online experience of users worldwide. I believe in developing websites which are accessible for everyone.',
-  para: 'Reach out to me if you have got an interesting project and looking for a right candidate.',
+  para: 'Reach out to me if you have got an interesting project and looking for the right candidate to achieve the goal.',
   quote: 'A good developer writes code that works. But, a great developer writes code which is understandable by everyone.',
   myDetails: [
     {
