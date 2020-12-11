@@ -1,0 +1,43 @@
+{
+  "files": {
+    "static/js/0.b88aced1.chunk.js": "/static/js/0.b88aced1.chunk.js",
+    "static/js/0.b88aced1.chunk.js.map": "/static/js/0.b88aced1.chunk.js.map",
+    "main.css": "/static/css/main.6d1c7fe6.chunk.css",
+    "main.js": "/static/js/main.bfdd6006.chunk.js",
+    "main.js.map": "/static/js/main.bfdd6006.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2f535a83.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2f535a83.js.map",
+    "static/js/3.292b0b23.chunk.js": "/static/js/3.292b0b23.chunk.js",
+    "static/js/3.292b0b23.chunk.js.map": "/static/js/3.292b0b23.chunk.js.map",
+    "static/js/4.09f5765f.chunk.js": "/static/js/4.09f5765f.chunk.js",
+    "static/js/4.09f5765f.chunk.js.map": "/static/js/4.09f5765f.chunk.js.map",
+    "static/js/5.2c681627.chunk.js": "/static/js/5.2c681627.chunk.js",
+    "static/js/5.2c681627.chunk.js.map": "/static/js/5.2c681627.chunk.js.map",
+    "static/js/6.7bf6a799.chunk.js": "/static/js/6.7bf6a799.chunk.js",
+    "static/js/6.7bf6a799.chunk.js.map": "/static/js/6.7bf6a799.chunk.js.map",
+    "index.html": "/index.html",
+    "service-worker.js": "/service-worker.js",
+    "service-worker.js.map": "/service-worker.js.map",
+    "static/css/main.6d1c7fe6.chunk.css.map": "/static/css/main.6d1c7fe6.chunk.css.map",
+    "static/js/3.292b0b23.chunk.js.LICENSE.txt": "/static/js/3.292b0b23.chunk.js.LICENSE.txt",
+    "static/media/aboutMe.ce8d321e.svg": "/static/media/aboutMe.ce8d321e.svg",
+    "static/media/education.583287e4.svg": "/static/media/education.583287e4.svg",
+    "static/media/experience.7390b383.svg": "/static/media/experience.7390b383.svg",
+    "static/media/folder.9848ddb8.svg": "/static/media/folder.9848ddb8.svg",
+    "static/media/lloyds.3253c12c.svg": "/static/media/lloyds.3253c12c.svg",
+    "static/media/location.c82c5d1d.svg": "/static/media/location.c82c5d1d.svg",
+    "static/media/photo.e51272ae.jpg": "/static/media/photo.e51272ae.jpg",
+    "static/media/project.1617389f.svg": "/static/media/project.1617389f.svg",
+    "static/media/success.0ec370fa.svg": "/static/media/success.0ec370fa.svg",
+    "static/media/tesco.6a39329a.svg": "/static/media/tesco.6a39329a.svg",
+    "static/media/university.89a36cf3.png": "/static/media/university.89a36cf3.png",
+    "static/media/walmart.e6261c3f.svg": "/static/media/walmart.e6261c3f.svg",
+    "static/media/writepost.5b8756a1.svg": "/static/media/writepost.5b8756a1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2f535a83.js",
+    "static/js/3.292b0b23.chunk.js",
+    "static/css/main.6d1c7fe6.chunk.css",
+    "static/js/main.bfdd6006.chunk.js"
+  ]
+}
